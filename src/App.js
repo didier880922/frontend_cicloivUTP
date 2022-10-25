@@ -1,11 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import HomeScreen  from './screens/HomeScreen';
+import { Link } from "react-router-dom";
 
 function App() {
   return (
+    <BrowserRouter>
     <div className="App">
-      <h1>Proyecto con React - UTP MISIÓN TIC GRUPOS 10, 16, 14</h1>
+      <header>
+        <Link to="/">Tienda virtual</Link>
+      </header>
+      <main>
+        <Routes>
+          <Route path='/' element={<HomeScreen />} />
+        </Routes>
+      </main>
     </div>
+    </BrowserRouter>
   );
 }
 
