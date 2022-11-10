@@ -7,30 +7,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-header {
-  background-color: #404040;
-  padding: 1rem;
-  font-size: 20px;
-}
-
-header a {
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
+.site-container {
+  min-height: 100vh;
 }
 
 main {
-  padding: 1.5rem;
+  flex: 1;
 }
 
 .products {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .product {
@@ -46,3 +34,8 @@ main {
 .product-info {
   padding: 2rem;
 }
+
+.img-large {
+  max-width: 100%;
+}
+
